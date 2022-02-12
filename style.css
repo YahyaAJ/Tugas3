@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #d9d9d9;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 2%;
+    background-color: #3385ff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Akaya Telivigala', cursive;
+    margin-right: 45px
+}
+.logo span{
+    color: #3385ff;
+    background-color: #fff;
+    padding: 0 2px;
+    margin-left: 4px;
+    border-radius:4px;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.search-box{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.search-box a{
+    width: 18px;
+    text-decoration: none;
+    color: #bfbfbf;
+}
+.search{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+.log-in{
+    background-color: #3385ff;
+    border: none;
+    margin-right: 15px;
+    font-size: 18px;
+    padding: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+.create{
+    background-color: #3385ff;
+    border: 1px solid #fff;
+    margin-left: 15px;
+    font-size: 15px;
+    padding: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+.log-in:hover{
+    background-color: #fff;
+    color: #3385ff;
+}
+.create:hover{
+    background-color: #fff;
+    color: #3385ff;
+}
+.p-nav{
+    color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 4%;
+}
+
+/* ----- Left Sidebar Start ----- */
+.left-sidebar{
+    /* background-color: gray; */
+    flex-basis: 20%;
+    /* position: sticky; */
+    top: 70px;
+    align-self: flex-start;
+    height: 100vw;
+    /* border-radius: 20px; */
+    /* padding: 25px; */
+    margin-right: 10px;
+}
+.ls-content{
+    /* border: 1px solid black; */
+    /* height: 300px; */
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    padding: 20px 5px;
+}
+.ls-content img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    
+}
+.ls-content ul{
+    list-style: none;
+}
+.ls-content ul li{
+    margin-top: 10px;
+}
+.text{
+    width: 200px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 0;
+    background: #e6e6e6;
+}
+.pwd{
+    width: 200px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 0;
+    background: #e6e6e6;
+}
+.login{
+    width: 220px;
+    padding: 5px 0; 
+    border-radius: 10px;
+    border: 0;
+    background: #e6e6e6; 
+}
+.login:hover{
+    background: #3385ff;
+    color: #fff;
+    cursor: pointer;
+}
+.lupa-pass{
+    margin-top: 10px;
+}
+.lupa-pass a{
+    color: #3385ff;
+    font-size: 15px;
+}
+.buat-akun{
+    margin: 10px 0;
+}
+.buat-akun input{
+    width: 220px;
+    padding: 5px 0; 
+    border-radius: 10px;
+    border: 0;
+    background: green;
+    color: #fff;
+    cursor: pointer;
+}
+.ls-menu{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.ls-menu ul{
+    list-style: none;
+}
+.ls-menu ul li{
+    margin-top: 30px;
+    background: #fff;
+    padding: 5px 7px;
+    border-radius: 15px 0 0 15px;
+}
+.ls-menu ul li:hover{
+    background: #e6e6e6;
+}
+.ls-menu ul li a{
+    font-size: 18px;
+    /* background-color: #fff; */
+    padding: 5px;
+    padding-right: 10px;
+}
+/* ----- Left Sidebar End ----- */
+
+
+/* ----- Right Sidebar Start ----- */
+.right-sidebar{
+    /* background-color: gray; */
+    flex-basis: 20%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    height: 100vh;
+}
+.ads{
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.rs-ads{
+    
+}
+.ads1 img{
+    width: 250px;
+}
+.ads2 img{
+    width: 250px;
+    margin-top: 10px;
+}
+/* ----- Right Sidebar End ----- */
+
+
+/* ----- Main Content start ----- */
+/* mc status 1 */
+.main-content{
+    flex-basis: 56%;
+    margin: 0 10px;
+}
+.mc-menu ul{
+    display: flex;
+    list-style: none;
+    margin: 6px;
+}
+.mc-menu ul li{
+    margin: 0 8px;
+}
+.mc-menu ul li a{
+    color: #000;
+    padding: 4px;
+}
+.mc-menu ul li a:hover{
+    background-color: #3385ff;
+    color: #fff;
+}
+.mc-status{
+    border: 1px solid #f2f2f2;
+    margin-top: 15px;
+    width: 100%;
+    /* height: 400px; */
+    border-radius: 17px;
+    /* padding: 15px; */
+}
+.users{
+    display: flex;
+    /* border: 1px solid black; */
+    /* height: 50px; */
+    padding: 17px 17px;
+    border-radius: 17px 17px 0 0;
+    background-color: #fff;
+}
+.online{
+    position: relative;
+}
+.online::after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.status-pp img{
+    width: 45px;
+    height: 45px;
+    border: 1.9px solid black;
+    border-radius: 50%;
+}
+.user-name{
+    margin-left: 13px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.user-date{
+    margin-left: 13px;
+}
+.status-desc{
+    background-color: #fff;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.status-desc p{
+    font-size: 18px;
+}
+.hashtag{
+    background: #fff;
+    padding-left: 22px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+.status-image{
+    /* border: 1px solid black; */
+    min-height: 230px;
+    background-color: #000;
+    text-align: center;
+}
+.status-image-img{
+    width: 230px;
+}
+.status-image-img2{
+    width: 100%;
+}
+.react{
+    display: flex;
+    background-color: #fff;
+    /* height: 80px; */
+    /* border-radius: 0 0 17px 17px; */
+    padding: 20px 22px;
+    justify-content: space-around;
+}
+.react ul{
+    display: flex;
+    list-style: none;
+    
+}
+.react ul li{
+    margin: 0 50px;
+    font-size: 20px;
+}
+.react ul li a:hover{
+    background: #3385ff;
+    padding: 7px 15px;
+    color: #fff;
+}
+.hr-top{
+    padding-top: 15px;
+    background: #fff;
+}
+.hr-bottom{
+    background: #fff;
+    padding-bottom: 10px;
+    border-radius: 0 0 17px 17px;
+}
+hr{
+    opacity: 40%;
+    width: 95%;
+    justify-content: center;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media only screen and (max-width:1000px){
+    .left-sidebar{
+        display: none;
+    }
+    .right-sidebar{
+        display: none;
+    }
+    .main-content{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        flex-basis: 90%;
+    }
+
+}
+/* mc status 2 */
+
